@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1727237296833
+current_stage: Staging
+description: null
+last_updated_timestamp: 1727237296873
+name: SVM_Model
+run_id: 6e3846261db44da5969f064b5fc2e92b
+run_link: null
+source: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/230337050019464183/6e3846261db44da5969f064b5fc2e92b/artifacts/SVM
+status: READY
+status_message: null
+storage_location: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/230337050019464183/6e3846261db44da5969f064b5fc2e92b/artifacts/SVM
+user_id: null
+version: 2

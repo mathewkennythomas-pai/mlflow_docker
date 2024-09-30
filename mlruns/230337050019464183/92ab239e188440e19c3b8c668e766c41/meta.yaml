@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/230337050019464183/92ab239e188440e19c3b8c668e766c41/artifacts
+end_time: 1727669344468
+entry_point_name: ''
+experiment_id: '230337050019464183'
+lifecycle_stage: active
+run_id: 92ab239e188440e19c3b8c668e766c41
+run_name: SVM
+run_uuid: 92ab239e188440e19c3b8c668e766c41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727669341467
+status: 3
+tags: []
+user_id: mathew.kenny

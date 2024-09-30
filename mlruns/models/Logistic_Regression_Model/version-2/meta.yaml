@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1727237290771
+current_stage: Staging
+description: null
+last_updated_timestamp: 1727237290801
+name: Logistic_Regression_Model
+run_id: 326293f9f57a40309cc468177aadc344
+run_link: null
+source: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/913514876953091857/326293f9f57a40309cc468177aadc344/artifacts/Logistic_Regression
+status: READY
+status_message: null
+storage_location: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/913514876953091857/326293f9f57a40309cc468177aadc344/artifacts/Logistic_Regression
+user_id: null
+version: 2

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/168761269161650844/291e9005a6b34a0aa5465436841e5416/artifacts
+end_time: 1727236909425
+entry_point_name: ''
+experiment_id: '168761269161650844'
+lifecycle_stage: active
+run_id: 291e9005a6b34a0aa5465436841e5416
+run_name: Random_Forest
+run_uuid: 291e9005a6b34a0aa5465436841e5416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727236906455
+status: 3
+tags: []
+user_id: mathew.kenny

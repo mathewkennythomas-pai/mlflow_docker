@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1727237293893
+current_stage: Staging
+description: null
+last_updated_timestamp: 1727237293925
+name: Random_Forest_Model
+run_id: ef3dc95b5a5a45fa85068f582e8a1e19
+run_link: null
+source: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/168761269161650844/ef3dc95b5a5a45fa85068f582e8a1e19/artifacts/Random_Forest
+status: READY
+status_message: null
+storage_location: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/168761269161650844/ef3dc95b5a5a45fa85068f582e8a1e19/artifacts/Random_Forest
+user_id: null
+version: 2

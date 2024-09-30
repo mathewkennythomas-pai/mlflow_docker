@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1727671786091
+current_stage: None
+description: null
+last_updated_timestamp: 1727671786091
+name: CustomPyFuncModel_Example
+run_id: f940d5cc92a3408abdbd67a04592f534
+run_link: null
+source: file:///c:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/342552980605951684/f940d5cc92a3408abdbd67a04592f534/artifacts/custom_model
+status: READY
+status_message: null
+storage_location: file:///c:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/342552980605951684/f940d5cc92a3408abdbd67a04592f534/artifacts/custom_model
+user_id: null
+version: 1

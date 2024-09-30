@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mathew.kenny/OneDrive%20-%20prevalent.ai/Documents/GitHub/mkt_repo/MLOps/MLFlow/mlruns/913514876953091857/326293f9f57a40309cc468177aadc344/artifacts
+end_time: 1727237290847
+entry_point_name: ''
+experiment_id: '913514876953091857'
+lifecycle_stage: active
+run_id: 326293f9f57a40309cc468177aadc344
+run_name: Logistic_Regression
+run_uuid: 326293f9f57a40309cc468177aadc344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727237288122
+status: 3
+tags: []
+user_id: mathew.kenny
