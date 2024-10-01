@@ -31,3 +31,8 @@ Deploying ML models using MLFlow and Docker
    ```
    docker run -it mlflow-app /bin/bash
    ```
+7. Run with volume mount
+   ```
+   docker run -v $(pwd)/model_artifacts:/workspace/mlruns mlflow-app
+   ```
+

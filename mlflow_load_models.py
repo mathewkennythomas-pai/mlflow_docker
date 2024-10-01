@@ -8,8 +8,10 @@ import warnings
 # Suppress all warnings
 warnings.filterwarnings("ignore")
 
-# Set the MLflow tracking URI (adjust this if your MLflow server is not local)
-mlflow.set_tracking_uri("http://localhost:5000")
+print("Loading models from MLFlow registry")
+
+# Set the MLflow tracking URI
+mlflow.set_tracking_uri("http://host.docker.internal:5000")
 
 def load_latest_model(model_name):
     """Load the latest version of a model from the Model Registry."""
@@ -45,6 +47,7 @@ models_to_load = [
     "SVM_Model"
 ]
 
+
 # Load models, print details, and make predictions
 for model_name in models_to_load:
     try:
@@ -60,3 +63,6 @@ for model_name in models_to_load:
         print(f"Error loading or using model {model_name}: {str(e)}")
 
 print("\nAll models loaded and predictions made.")
+
+
+
