@@ -26,3 +26,8 @@ Deploying ML models using MLFlow and Docker
    ```
    docker run --add-host=host.docker.internal:host-gateway mlflow-app
    ```
+
+6. Run the docker image in interactive mode
+   ```
+   docker run -it mlflow-app /bin/bash
+   ```
