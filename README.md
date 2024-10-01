@@ -33,6 +33,6 @@ Deploying ML models using MLFlow and Docker
    ```
 7. Run with volume mount
    ```
-   docker run --add-host=host.docker.internal:host-gateway -v $(pwd)/model_artifacts:/workspace/mlruns mlflow-app
+   docker run --add-host=host.docker.internal:host-gateway -v $(pwd)/mlruns:/workspace/mlruns mlflow-app
    ```
 
