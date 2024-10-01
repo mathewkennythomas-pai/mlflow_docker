@@ -37,6 +37,12 @@ MLflow integrates well with popular ML libraries such as Scikit-learn, TensorFlo
 
 MLflow is a powerful tool for managing the machine learning lifecycle, enhancing collaboration, and improving productivity in ML development. By leveraging its capabilities, teams can streamline their workflows and focus on building better models.
 
+![image](https://github.com/user-attachments/assets/285e21d4-f8a6-455a-a42c-ceaeceac30cb)
+
+![image](https://github.com/user-attachments/assets/f2f9c1f5-2bfa-4dea-bc43-76aa28faa291)
+
+
+
 # MLflow Model Registry: Logging and Inference Guide
 
 MLflow is an open-source platform that streamlines the machine learning lifecycle, including model training, logging, and deployment. This guide will walk you through using the MLflow Model Registry to log trained models and make predictions with them.
@@ -104,6 +110,8 @@ The MLflow Model Registry allows you to:
    svm_model = SVC(kernel='linear')
    train_log_and_register_model(svm_model, "SVM", "SVM_Experiment", "SVM_Model")
    ```
+![image](https://github.com/user-attachments/assets/c3534a71-579e-44bd-ae85-bcb4414e2037)
+
 
 ## Step 2: Making Inferences with Registered Models
 
