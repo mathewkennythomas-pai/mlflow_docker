@@ -1,27 +1,42 @@
-FROM python:3.11-slim
+# Build stage
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim AS builder
 
-WORKDIR /workspace
+ENV UV_EXTRA_INDEX_URL=https://download.pytorch.org/whl/cpu
+ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
 
-# Install uv
-RUN pip install uv
+WORKDIR /app
 
-# Copy pyproject.toml
-COPY pyproject.toml /workspace/pyproject.toml
-
-# Create a virtual environment and install dependencies using uv
 # Install dependencies
 RUN --mount=type=cache,target=/root/.cache/uv \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    --mount=type=bind,source=uv.lock,target=uv.lock,from=pyproject.toml \
-    uv pip sync --frozen --no-install-project --no-dev
+	--mount=type=bind,source=uv.lock,target=uv.lock \
+	--mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+	uv sync --frozen --no-install-project --no-dev
 
-# COPY requirements.txt /workspace/requirements.txt
-# RUN pip install -r requirements.txt
+# Copy the rest of the application
+ADD . /app
 
+# Install the project and its dependencies
+RUN --mount=type=cache,target=/root/.cache/uv \
+	uv sync --frozen --no-dev
+
+# Final stage
+FROM python:3.12-slim-bookworm
+
+# Copy the application from the builder
+COPY --from=builder --chown=app:app /app /app
+
+# Place executables in the environment at the front of the path
+ENV PATH="/app/.venv/bin:$PATH"
+
+# Set the working directory
+WORKDIR /app
+
+# Set MLflow tracking URI
+ENV MLFLOW_TRACKING_URI file:///app/mlruns
+
+# Copy MLflow scripts
 COPY mlruns /workspace/mlruns
+COPY mlflow_load_models.py /app/
 
-COPY mlflow_load_models.py /workspace/
-
-ENV MLFLOW_TRACKING_URI file://app/mlruns
-
+# Set the entrypoint to run the MLflow script
 CMD ["python", "mlflow_load_models.py"]
